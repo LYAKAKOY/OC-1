@@ -109,7 +109,7 @@ while True:
     if choice == 6:
         break
 
-    if 1 < choice < 6:
+    elif 1 < choice < 6:
         file_name = input('Введите название файла: ') + menu.get(str(choice)).type_file
         while True:
 
@@ -125,5 +125,8 @@ while True:
                 break
             else:
                 break
-    else:
+    elif choice == 1:
         DISK()
+
+    else:
+        print('Такого пункта нет')
